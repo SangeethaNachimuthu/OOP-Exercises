@@ -32,6 +32,10 @@ public class Main {
         System.out.println(customer3.toString());
         System.out.println();
 
+         /* Exercise - 3
+        Created three objects of Student class and
+        assigned values to the fields and printed them.
+         */
         System.out.println("Student Details: ");
         System.out.println("================");
         Student lily = new Student("Lily", 18, "ECE");
@@ -40,5 +44,20 @@ public class Main {
         lily.getStudentInfo();
         rosy.getStudentInfo();
         daisy.getStudentInfo();
+        System.out.println();
+
+         /* Exercise - 4
+        Created three objects of Product class and
+        assigned values to the fields and printed them.
+         */
+        System.out.println("Product Details: ");
+        System.out.println("================");
+        Product fan = new Product(1001, "Bosch Fan", 800);
+        Product table = new Product(2004, "Dinning Table", 4800);
+        Product pot = new Product(105, "Plastic Pot", 45);
+        System.out.println(fan.toString());
+        System.out.println(table.toString());
+        System.out.println(pot.toString());
+        System.out.println();
     }
 }
