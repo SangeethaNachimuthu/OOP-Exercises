@@ -1,0 +1,28 @@
+package lexicon;
+
+public class BackAccount {
+
+    private String accountHolder;
+    private double balance;
+
+    public BackAccount(String accountHolder, double balance) {
+        this.accountHolder = accountHolder;
+        this.balance = balance;
+    }
+
+    public String getAccountHolder() {
+        return accountHolder;
+    }
+
+    public void setAccountHolder(String accountHolder) {
+        this.accountHolder = accountHolder;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+}
