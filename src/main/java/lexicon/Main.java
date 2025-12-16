@@ -59,5 +59,29 @@ public class Main {
         System.out.println(table.toString());
         System.out.println(pot.toString());
         System.out.println();
+
+        /* Exercise - 4
+        Created an object of Order class and called their methods to perform operations.
+        One order has many products.
+         */
+        Order order1 = new Order();
+        order1.addProduct(fan);
+        order1.addProduct(table);
+        order1.addProduct(pot);
+        System.out.println(order1.toString());
+        order1.calculateTotal();
+        order1.removeProduct(table);
+        System.out.println(order1.toString());
+        order1.calculateTotal();
+
+        Order order2 = new Order();
+        Product saucePan = new Product(104, "SaucePan", 425);
+        Product fryingPan = new Product(124, "FryingPan", 560);
+        Product jar = new Product(188, "GlassJar", 65);
+        order2.addProduct(saucePan);
+        order2.addProduct(fryingPan);
+        order2.addProduct(jar);
+        System.out.println(order2.toString());
+        order2.calculateTotal();
     }
 }
