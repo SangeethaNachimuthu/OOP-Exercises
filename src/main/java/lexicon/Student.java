@@ -39,6 +39,18 @@ public class Student {
         return UUID.randomUUID().toString().substring(0, 6).toUpperCase();
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        if (name.isEmpty()) {
+            System.out.println("Name can't be empty or null!");
+            return;
+        }
+        this.name = name;
+    }
+
     public int getAge() {
         return age;
     }
@@ -51,17 +63,6 @@ public class Student {
         this.age = age;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        if (name.isEmpty()) {
-            System.out.println("Name can't be empty or null!");
-            return;
-        }
-        this.name = name;
-    }
 
     public String getMajor() {
         return major;

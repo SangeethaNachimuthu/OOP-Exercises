@@ -34,14 +34,6 @@ public class Customer {
         this.customerId = customerId;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getName() {
         return name;
     }
@@ -51,6 +43,14 @@ public class Customer {
             throw new IllegalArgumentException("Name can't be empty/null.");
         }
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
