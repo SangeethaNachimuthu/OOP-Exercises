@@ -4,7 +4,7 @@ public class Main {
 
     void main() {
 
-        /*
+        /* Exercise - 1
         Created three objects of BankAccount class and
         assigned values to the fields and printed them.
          */
@@ -14,5 +14,16 @@ public class Main {
         account1.getBankDetails();
         account2.getBankDetails();
         account3.getBankDetails();
+
+        /* Exercise - 2
+        Created three objects of Customer class and
+        assigned values to the fields and printed them.
+         */
+        Customer customer1 = new Customer(100, "Sang");
+        Customer customer2 = new Customer(101, "Aadhi", "aathi@gmail.com");
+        Customer customer3 = new Customer(-102, "Ann");
+        System.out.println(customer1.toString());
+        System.out.println(customer2.toString());
+        System.out.println(customer3.toString());
     }
 }

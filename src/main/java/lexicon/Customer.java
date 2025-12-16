@@ -1,5 +1,8 @@
 package lexicon;
 
+/*
+The Customer class holds the fields of CustomerID, Name and Email.
+ */
 public class Customer {
 
     private int customerId;
@@ -24,7 +27,9 @@ public class Customer {
 
     public void setCustomerId(int customerId) {
         if (customerId < 0) {
-            throw new IllegalArgumentException("CustomerId can't be Negative.");
+           // throw new IllegalArgumentException("CustomerId can't be Negative.");
+            System.out.println("CustomerId can't be Negative.");
+            return;
         }
         this.customerId = customerId;
     }
